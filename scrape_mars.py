@@ -3,7 +3,7 @@
 from bs4 import BeautifulSoup as bs
 import requests
 from splinter import Browser
-from splinter.exceptions import ElementDoesNotExist
+from splinter
 import time
 
 
@@ -18,7 +18,7 @@ def scrape():
     # #### NASA Mars News
     # We will scrape the lastest News Title and Paragragh Text from NASA Mars News Site(https://mars.nasa.gov/news/).
     # URL of page to be scraped
-    url1 = 'https://mars.nasa.gov/news/?page=0&per_page=40&order=publish_date+desc%2Ccreated_at+desc&search=&category=19%2C165%2C184%2C204&blank_scope=Latest'
+    url1 = 'https://mars.nasa.gov/news'
     #Visit the page using the browser
     browser.visit(url1)
     # assign html content
